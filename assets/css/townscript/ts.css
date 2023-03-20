@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px) {
+            #ts-iframe {
+				align-content: center;
+                width: 100%;
+            }
+        }
