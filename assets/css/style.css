@@ -72,9 +72,6 @@ h6 {
   }
 }
 
-
-
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -458,7 +455,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/goldbg.png") center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -643,30 +640,7 @@ h6 {
     opacity: 0;
   }
 }
-#main .btns {
-  margin-top: 30px;
-}
 
-#main .btn-menu,
-#main .btn-book {
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 50px;
-  transition: 0.3s;
-  line-height: 1;
-  color: white;
-  border: 2px solid #cda45e;
-}
-
-#main .btn-menu:hover,
-#main .btn-book:hover {
-  background: #cda45e;
-  color: #fff;
-}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -867,13 +841,6 @@ section {
     background-attachment: fixed;
   }
 }
-.inner-page{
-  
-
-  
-  
-}
-
 
 /*--------------------------------------------------------------
 # Why Us
@@ -1080,7 +1047,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  /*background: url(../img/TEC_BBG.jpg) center center no-repeat;*/
+  background: url(../img/events-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1474,7 +1441,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 150px;
+  border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
 
