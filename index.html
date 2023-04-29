@@ -31,7 +31,7 @@
 </head>
 
 <body>
-  <img src="assets\img\SONA - png.png" width="250" height="100" alt=""/><!-- ======= Top Bar ======= -->
+  <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
 
@@ -45,6 +45,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
+	  <img src="assets\img\SONA - png.png" width="250" height="100" alt=""/>
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">the english club</a></h1>
@@ -72,7 +73,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-	  <p style="background-image: url('assets\img\goldbg.png');">
+	  <p style="background-image: url('assets\img\goldbg.png');"></p>
     
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
@@ -81,12 +82,52 @@
           <h2>THE BIGGEST LITERARY LEAGUE IN SONA COLLEGE OF TECHNOLOGY</h2>
           <h2>HOSTED BY THE ENGLISH CLUB &nbsp;&nbsp;</h2>
 <div class="btns">
+	
+	<div class="demo1">
+		
+		
+		<p id="countdown">Time left: 2d 19h 39m 59s </p>
+    </div>
+		<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("May 2, 2023 17:00:00").getTime();
+
+		// Update the countdown every 1 second
+		var x = setInterval(function() {
+
+		  // Get today's date and time
+		  var now = new Date().getTime();
+
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		  // Display the result in the element with id="countdown"
+		  document.getElementById("countdown").innerHTML = "Time left: "+days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+		  // If the count down is finished, write some text
+		  if (distance < 0) {
+		    clearInterval(x);
+		    document.getElementById("countdown").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+	</script>
+	<br><br>
+	<a href="registration.html" class="Primarybutt"> click to register now!</a><br><br>
         <a href="#specials" class="btn-menu animated fadeInUp scrollto">PRELIMS</a>
-	<a href="#about" class="btn-menu animated fadeInUp scrollto">ABOUT</a>
+	<a href="#about" class="btn-menu animated fadeInUp scrollto">ABOUT</a><br><br>
         <a href="#contact" class="btn-menu animated fadeInUp scrollto">CONTACT</a>
+		</div>
+</div>
+</div>
 	
           
-	<br><br><a href="registration.html" class="btn-menu animated fadeInUp scrollto"> click to register now!</a>
+	<br><br>
 	<!-- Display the countdown timer in an element -->
       
       
@@ -95,41 +136,9 @@
         <div class="col-lg-4 d-flex align-items-right justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
           <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
         </div>
-<script>
-// Set the date we're counting down to
-	
-var countDownDate = new Date("May 02, 2023 16:59:59").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
+			
+      
   
-  document.getElementById("demo").innerHTML = "prelims in : " +days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "event has started";
-  }
-}, 1000);
-</script>
-		
-      </div>
-    </div>
   </section><!-- End Hero -->
 
   <main id="main">
@@ -565,7 +574,7 @@ var x = setInterval(function() {
               <img src="assets/img/chefs/chefs-1.JPG" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>RAHUL DAVID</h4>
+                  <h4>RAGHUL DAVID</h4>
                   <span>CHAIR MAN</span>
                 </div>
               </div>
@@ -653,7 +662,7 @@ var x = setInterval(function() {
 	</div>
 		<br>
 		
-		<div class="demo1">
+		<div class="demo">
 			
 			
 		<a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDZkcm52dmNpbmZpcjF2Ym1jdGUxbXI4dGJfMjAyMzA0MjRUMTEzMDAwWiBkb252aXA1NkBt&tmsrc=donvip56%40gmail.com&scp=ALL">add to your calender</a>
