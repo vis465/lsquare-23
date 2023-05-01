@@ -40,20 +40,20 @@
 <body>
 <div id="instructionBox">
   <div id="instructionText">
-    <h3>Instructions for registration</h3>
+    <h2>Instructions</h2>
     <ol>
-      <li>You can register for multiple days of prelims in a single booking</li>
-		<li>plan your participation upon booking (we recommend booking for all 4 days)</li>
-      <li>The name you enter would be recorded for documentation</li>
-      <li>Wait for generation of E-ticket upon sucessful registration </li>
-      <li>Download the E-ticket generated  and preserve till the last day of prelims</li>
-      <li>Carefully fill the feilds with correct answers</li>
-      <li>Make sure that your ticket was scanned by the organizers before leaving the venue&nbsp; &nbsp; &nbsp;</li>
+      <li>Instruction 1</li>
+      <li>Instruction 2</li>
+      <li>Instruction 3</li>
+      <li>Instruction 4</li>
+      <li>Instruction 5</li>
     </ol>
-    <label for="understoodCheckbox">
-      <input type="checkbox" id="understoodCheckbox" onchange="enableOkButton()" />
-      I understand and agree to the instructions above
-    </label>
+    <div id="checkboxContainer">
+      <label for="understoodCheckbox">
+        <input type="checkbox" id="understoodCheckbox" onchange="enableOkButton()" />
+        <span>I understand and agree to the instructions above</span>
+      </label>
+    </div>
     <button id="okButton" disabled onclick="closeInstructionBox()">OK</button>
   </div>
 </div>
@@ -79,20 +79,21 @@ function closeInstructionBox() {
   width: 100%;
   height: 100%;
   background-color: #1a1814;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
 #instructionText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #1a1814;
   color: #cda45e;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  max-width: 90%;
 }
 
 #instructionText h2 {
@@ -108,10 +109,19 @@ function closeInstructionBox() {
   margin-bottom: 5px;
 }
 
-#instructionText label {
-  display: block;
+#checkboxContainer {
   margin-bottom: 20px;
   text-align: center;
+}
+
+#checkboxContainer label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#checkboxContainer input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 #okButton {
